@@ -1,0 +1,192 @@
+.nav {
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    /* background-color: pink; */
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.logo {
+    width: 111px;
+    height: 47px;
+    left: 14px;
+    margin: auto 0;
+    margin-left: 15px;
+    background: transparent url(../images/LOGO_2x.png) no-repeat center;
+    background-size: contain;
+    /* border: 1px solid red;
+    background-color: rgba(255,0,0,0.2);  */
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    position: relative;
+    width: 400px;
+    height: 33px;
+
+    margin: auto 22px;
+    border: 1px solid #c1c1c1;
+    border-radius: 2px 0 0 2px;
+    border-right: none;
+
+    overflow: visible;
+}
+
+.search .select {
+    position: relative;
+    width: 74px;
+    height: 33px;
+    border: none;
+    border-radius: 1px 0 0 1px;
+    
+    padding-left: 15px;
+    background-color: transparent;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: url(../images/arrow.png) no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 8px) center;
+
+    cursor: pointer;
+}
+
+.search .select option {
+    background-color: orange;
+}
+.search .select option:hover {
+    background-color: red !important;
+}
+
+.search .blockline {
+    position: absolute;
+    background-color: #c1c1c1;
+
+    top: 1px;
+    width: 1px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #c1c1c1;
+}
+
+.search .bar {
+    position: relative;
+    font-size: 14px;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    border: 0;
+    background-color: transparent;
+
+    line-height: 33px;
+    padding-left: 14px;
+}
+
+.search button {
+    width: 66px;
+    height: 35px;
+    border: none;
+    margin-left: auto;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    cursor: pointer;
+    z-index: 1;
+    border-left: 1px solid #c1c1c1;
+    background: #ff8400 url(../images/search.png) no-repeat center center;
+    background-size: 18px;
+}
+
+.publicity {
+    display: flex;
+    width: 238px;
+    height: 50px;
+    /* background-color: red; */
+    margin-left: auto;
+}
+
+.publicity .announce {
+    width: 100px;
+    height: 50px;
+    /* background-color: blue; */
+    margin-right: auto;
+    background: url(../images/hxjzg103.jpg) no-repeat center center;
+}
+
+
+
+
+
+
+/* 图片轮播 */
+.publicity .slideContainer {
+    position: relative;
+    width: 133px;
+    height: 50px;
+}
+
+.publicity .slideContainer .slideItems {
+    position: relative;
+    width: 133px;
+    height: 50px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.publicity .slideContainer .slideItems .slide {
+    position: relative;
+    width: 133px;
+    height: 50px;
+    
+    /* top: 100%; */
+    animation: slideImg 60s infinite;
+}
+
+@keyframes slideImg {
+    0%, 3.75% {
+        top: 0;
+    }
+    6.25%, 13.75% {
+        top: -100%;
+    }
+    16.25%, 23.75% {
+        top: -200%;
+    }
+    26.25%, 33.75% {
+        top: -300%;
+    }
+    36.25%, 43.75% {
+        top: -400%;
+    }
+    46.25%, 53.75% {
+        top: -500%;
+    }
+    56.25%, 63.75% {
+        top: -600%;
+    }
+    66.25%, 73.75% {
+        top: -700%;
+    }
+    76.25%, 83.75% {
+        top: -800%;
+    }
+    86.25%, 93.75% {
+        top: -900%;
+    }
+    96.25%, 100% {
+        top: -1000%;
+    }
+}

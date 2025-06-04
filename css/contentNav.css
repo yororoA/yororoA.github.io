@@ -1,0 +1,38 @@
+.contentNav {
+    position: relative;
+    width: 1000px;
+    height: 86px;
+    /* background-color: pink; */
+    margin: 0 auto 12px auto;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.content {
+    width: 250px;
+    display: flex;
+    margin: auto 0;
+    box-sizing: border-box;
+
+    border-right: 1px solid #f1e5c5;
+}
+
+.content ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 4px;
+
+    align-items: center;
+}
+
+.content:nth-child(4) {
+    border: none;
+}
+
+.content:nth-child(n+2) ul{
+    /* background-color: red; */
+    margin: 0 auto;
+}
+

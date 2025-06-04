@@ -1,0 +1,392 @@
+.cContent {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+.cContent .cleft {
+    left: 0;
+    margin-right: 20px;
+
+    width: 240px;
+    height: 90px;
+    background-color: blue;
+}
+/* —————————————————————————————————————————————————————————————————— */
+.cContent .ccright {
+    position: relative;
+    /* display: flex;
+    flex: 1;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 360px 360px;
+    gap: 20px;
+
+
+    box-sizing: border-box;
+}
+
+.cContent .ccright
+.leftbox,.rightbox {
+    width: 360px;
+    height: fit-content;
+}
+
+.cContent .ccright .box {
+    width: 360px;
+
+    margin-right: auto;
+    margin-bottom: 23px;
+    
+}
+
+.cContent .ccright .box .cright {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    
+
+    width: 360px;
+
+    box-sizing: border-box;
+}
+
+
+/* 之后使用js达成永久状态 */
+/* .cContent .ccright .box .cright a {
+    display: flex;
+
+    text-align: center;
+    flex-direction: column;
+    width: 57px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #dbdee1;
+    border-right: none;
+    background-color: #f7f7f7;
+
+    box-sizing: border-box;
+}
+
+.cContent .ccright .box .cright a:nth-child(n+2) {
+    border-left: none;
+}
+.cContent .ccright .box .cright a:nth-child(1):hover {
+    border-left: none;
+}
+
+.cContent .ccright .box .cright a:hover {
+    border-top: 3px solid #ff8400;
+    border-right: 1px solid #dbdee1;
+    border-left: 1px solid #dbdee1;
+    border-bottom: none;
+    background-color: #fff;
+
+    
+} */
+
+.cContent .ccright .box .cright a:first-child {
+    display: flex;
+
+    text-align: center;
+    flex-direction: column;
+    width: 57px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #dbdee1;
+    
+    border-top: 3px solid #ff8400;
+    border-right: 1px solid #dbdee1;
+    border-left: none;
+    border-bottom: none;
+    background-color: #fff;
+
+    box-sizing: border-box;
+}
+/* 之后使用js达成永久状态 */
+
+
+
+
+.cContent .ccright .box .cright .blank {
+    position: relative;
+    flex: 1;
+
+    height: 36px;
+
+    border: 1px solid #dbdee1;
+    border-left: none;
+    background-color: #f7f7f7;
+
+    box-sizing: border-box;
+}
+
+.cContent .ccright .box .crightContent {
+    display: grid;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex: 1; */
+    
+    /* width: 30px; */
+    /* height: 500px; */
+    /* background-color: red; */
+}
+
+.cContent .ccright .vB {
+    margin-top: 15px;
+
+    display: grid;
+    width: 360px;
+    grid-template-columns: 105px calc(360px - 105px - var(--gap));
+
+    --gap: 0.7em;
+    gap: var(--gap);
+
+    /* overflow: hidden; */
+    /* _____________________________________________________ */
+}
+
+.cContent .ccright .box .newsVideo {
+    display: grid;
+
+    width: 100%;
+    /* height: 90px; */
+    /* background-color: red; */
+
+    /* margin-top: 15px; */
+    /* margin-right: 13px; */
+    /* grid-template-rows: 105px 105px; */
+    gap: 13px;
+}
+
+.play {
+    --PPwidth: 25px;
+    --Pheight: 25px;
+    --Phh: -25px;
+    position: absolute;
+    top: calc(var(--Phh) - .2em);
+    left: .3em;
+
+    width: var(--PPwidth);
+    height: var(--Pheight);
+    /* background-color: red; */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    font-family: 'icomoon';
+    font-size: 25px;
+    /* ______________________________________________ */
+}
+
+.cContent .ccright .box .newsVideo a{
+    /* width: 105px;
+    height: 90px;
+    background-color: red; */
+    position: relative;
+
+    display: flex; 
+    margin: 0 auto;
+
+    width: 105px;
+    height: 90px;
+
+    background-color: pink;
+    
+
+    font-size: 12px;
+    text-align: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.cContent .ccright .box .newsVideo a:hover {
+    color: #ff8500;
+}
+
+.cContent .ccright .box .newsVideo a h4 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    font-weight: normal;
+}
+
+.cContent .ccright .box .nVtitle {
+    /* display: flex; */
+    position: relative;
+
+    /* margin-top: 14px; */
+    width: 100%;
+    /* height: 200px; */
+    /* background-color: green; */
+}
+
+.cContent .ccright .box .crightContent .newsImg {
+    margin-top: 26px;
+    display: flex;
+}
+
+.cContent .ccright .box .crightContent .newsImg a {
+    display: flex; 
+    margin: 0 auto;
+
+    width: 105px;
+    height: 90px;
+
+    background-color: #000;
+
+    font-size: 12px;
+    text-align: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.cContent .ccright .box .crightContent .newsImg a:hover {
+    color: #ff8500;
+}
+
+.cContent .ccright .box .crightContent .newsImg a h4 {
+    
+    font-weight: normal;
+}
+
+.cContent .ccright .box .crightContent .newsImg a:nth-child(2) {
+    margin: 0 21px;
+}
+
+.cContent .ccright .box .crightContent .newsTitle {
+    margin-top: 14px;
+    
+    flex: 1;
+    /* padding-left: 0.6em; */
+
+    overflow: hidden;
+}
+
+/* .cContent .ccright .box .crightContent .newsTitle li {
+    position: relative;
+    padding-right: 0.3em;
+
+    单行文本溢出省略
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    
+    margin-bottom: 0.3em;
+
+} */
+
+
+/* .cContent .ccright .box .crightContent .newsTitle li:last-child {
+    margin-bottom: 0;
+} */
+
+/* .cContent .ccright .box .crightContent .newsTitle li::marker {
+    position: absolute;
+    
+
+    color: #ff8400;
+    font-size: 0.6em;
+} */
+
+/* .cContent .ccright .box .crightContent .newsTitle li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+
+    background: url(../images/liststyle.png) no-repeat;
+    background-size: contain;
+
+    position: relative;
+    transform: translateY(-0.1em);
+    padding-right: 0.5em;
+    margin-left: 0.1em;
+} */
+
+.vB .nvContent {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: .5em;
+
+    overflow: hidden;
+}
+
+.nVtitle {
+    margin: auto 0;
+}
+
+.nVtitle li {
+    margin-bottom: 4px;
+
+    width: calc(360px - 105px - var(--gap));
+}
+
+.nVtitle li,
+.newsTitle li {
+    position: relative;
+
+    /* 单行文本溢出省略 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.newsTitle li {
+    padding-bottom: .58em;
+}
+
+.nVtitle li a,
+.newsTitle li a {
+    font-family: SimSun, sans-serif;
+    color: #122e67;
+}
+.newsTitle li:first-child a {
+    color: #e66100;
+}
+.nVtitle li a:hover,
+.newsTitle li a:hover {
+    color: #e66100;
+    text-decoration: underline;
+}
+
+
+.liststyle,
+.videolist {
+    font-family: 'icomoon';
+    font-size: 14px;
+    color: #ff8400;
+
+    align-items: center;
+    padding-right: .3em;
+}
+
+.liststyle {
+    position: relative;
+    font-size: 5px;
+
+    top: -.5em;
+    padding-right: 1em;
+}
+
+.videolist {
+    position: relative;
+
+    bottom: -.1em;
+}
+

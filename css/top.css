@@ -1,0 +1,50 @@
+.top {
+    position: relative;
+    height: 41px;
+    width: 1000px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    border-top: 3px solid #ff8500;
+    border-bottom: 1px solid #edeef0;
+}
+
+.top .left {
+    position: relative;
+    float: left;
+    margin: 0 auto;
+}
+
+.top .right {
+    position: relative;
+    float: right;
+    margin: 0 auto;
+}
+
+.top li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    height: 41px;
+    box-sizing: border-box;
+}
+
+.top li a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 9px 12px 16px;
+    height: 41px;
+    color: #4c4c4c;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* .top .right li a {
+    padding: 12px 15px 12px 18px;
+} */
+
+.top li a:hover {
+    color: #ff8500;
+    background-color: #edeef0;
+}

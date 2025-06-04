@@ -1,0 +1,30 @@
+.deaf {
+    position: relative;
+    display: flex;
+
+    margin: 0 auto;
+    width: 1000px;
+    height: 90px;
+    background-color: blue;
+    /* background: url(../images/adver/deafAdver.jpg) no-repeat center; */
+
+    margin-bottom: 25px;
+}
+
+.fullAdLogo {
+    position: absolute;
+
+    font-size: 9px;
+    color: #fff;
+    width: 26px;
+    height: 13px;
+    text-align: center;
+    background-color: rgba(39, 37, 37, 0.5);
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    right: 1px;
+    bottom: 1px;
+
+    cursor: default;  
+}

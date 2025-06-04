@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        span {
+            display: inline-block;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: #ff8500;
+        }
+
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?ax9o3w');
+            src:  url('fonts/icomoon.eot?ax9o3w#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?ax9o3w') format('truetype'),
+                url('fonts/icomoon.woff?ax9o3w') format('woff'),
+                url('fonts/icomoon.svg?ax9o3w#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/arrow.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/contentNav.css">
+    <link rel="stylesheet" href="./css/fullAd.css">
+    <link rel="stylesheet" href="./css/cContent.css">
+</head>
+<body>
+    <div class="top">
+        <ul>
+            <div class="left">
+                <li><a href="#">设为首页</a></li>
+                <li><a href="#">手机新浪网</a></li>
+                <li>
+                    <ul class="dropdown">
+                        <a href="#">
+                            移动客户端
+                            <span class="arrow">&nbsp;</span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">新浪微博</a></li>
+                            <li><a href="#">新浪新闻</a></li>
+                            <li><a href="#">新浪财经</a></li>
+                            <li><a href="#">黑猫投诉</a></li>
+                            <li><a href="#">新浪博客</a></li>
+                            <li><a href="#">新浪众测</a></li>
+                            <li><a href="#">新浪邮箱客户端</a></li>
+                        </ul>
+                    </ul>
+                </li>
+            </div>
+            <div class="right">
+                <li><a href="#">登录</a></li>
+                <li>
+                    <ul class="dropdown">
+                        <a href="#">
+                            微博
+                            <span class="arrow">&nbsp;</span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">私信</a></li>
+                            <li><a href="#">评论</a></li>
+                            <li><a href="#">@我</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dropdown">
+                        <a href="#">
+                            博客
+                            <span class="arrow">&nbsp;</span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">博客评论</a></li>
+                            <li><a href="#">未读提醒</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dropdown">
+                        <a href="#">
+                            邮箱
+                            <span class="arrow">&nbsp;</span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">免费邮箱</a></li>
+                            <li><a href="#">VIP邮箱</a></li>
+                            <li><a href="#">企业邮箱</a></li>
+                            <li><a href="#">新浪邮箱客户端</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><a href="#">网站导航</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="nav">
+        <a href="#" class="logo"></a>
+        <form action="" class="search">
+            <div>
+                <!-- 以后配合js实现自定义下拉菜单 -->
+                <select name="" id="" class="select">
+                    <option value="">新闻</option>
+                    <option value="">微博</option>
+                    <option value="">图片</option>
+                    <option value="">视频</option>
+                </select>
+                <span class="blockline"></span>
+                <input type="text" class="bar" placeholder="请输入关键字">
+            </div>
+            <button type="submit"></button>
+        </form>
+        <div class="publicity">
+            <!-- <span class="announce"></span> -->
+            <a href="https://news.sina.com.cn/pc/2014-10-30/326/3095.html" class="announce" target="_blank"></a>
+            <div class="slideContainer">
+                <ul class="slideItems">
+                    <li class="slide"><img src="./images/jubao/h50l50t1q800a9.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q80318.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q80950.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q809f8.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q80a16.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q80eee.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q80f97.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/q60d85.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/w133h50f30.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/w133h50z1l50t1q60f1824.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/jubao/h50l50t1q800a9.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contentNav">
+        <div class="content">
+            <ul>
+                <li><b><a href="#">新闻</a></b></li>
+                <li><b><a href="#">财经</a></b></li>
+                <li><b><a href="#">科技</a></b></li>
+            </ul>
+            <ul>
+                <li><a href="#">军事</a></li>
+                <li><a href="#">股票</a></li>
+                <li><a href="#">手机</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">国内</a></li>
+                <li><a href="#">基金</a></li>
+                <li><a href="#">众测</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">国际</a></li>
+                <li><a href="#">外汇</a></li>
+                <li><a href="#">创事记</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <ul>
+                <li><b><a href="#">体育</a></b></li>
+                <li><b><a href="#">娱乐</a></b></li>
+                <li><b><a href="#">骑车</a></b></li>
+            </ul>
+            <ul>
+                <li><a href="#">NBA</a></li>
+                <li><a href="#">时尚</a></li>
+                <li><a href="#">报价</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">英超</a></li>
+                <li><a href="#">女性</a></li>
+                <li><a href="#">买车</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">中超</a></li>
+                <li><a href="#">育儿</a></li>
+                <li><a href="#">新车</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <ul>
+                <li><b><a href="#">博客</a></b></li>
+                <li><b><a href="#">教育</a></b></li>
+                <li><b><a href="#">房产</a></b></li>
+            </ul>
+            <ul>
+                <li><a href="#">专栏</a></li>
+                <li><a href="#">留学</a></li>
+                <li><a href="#">二手房</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">专题</a></li>
+                <li><a href="#">高考</a></li>
+                <li><a href="#">家居</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">精品</a></li>
+                <li><a href="#">读书</a></li>
+                <li><a href="#">彩票</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <ul>
+                <li><b><a href="#">视频</a></b></li>
+                <li><b><a href="#">微博</a></b></li>
+                <li><b><a href="#">旅游</a></b></li>
+            </ul>
+            <ul>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">城市</a></li>
+                <li><a href="#">邮箱</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">黑猫</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">客服</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">投资</a></li>
+                <li><a href="#">政务</a></li>
+                <li><a href="#">导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <span class="deaf">
+        <a href="https://sinaluming.com/z/19875/?SET_A=PDPS000000045825&SET_B=3606550&SET_C=4685300&SET_D=d515ceae-41a8-4ce8-8970-23592cc5234d&SET_E=3267184&SET_F=1" target="_blank"><img src="./images/adver/deafAdver.jpg" alt=""></a>
+        <span class="fullAdLogo">广告</span>
+    </span>
+    <div class="cContent">
+        <div class="cleft"></div>
+        <div class="ccright">
+            <div class="leftbox">
+                <div class="box">
+                    <div class="cright">
+                        <!-- /* 之后使用js达成永久状态 */ -->
+                        <a href="#"><h3>专栏</h3></a>
+                        <!-- <a href="#"><h3>专栏</h3></a>
+                        <a href="#"><h3>专栏</h3></a> -->
+                        <span class="blank"></span>   
+                    </div>
+                    <div class="crightContent">
+                        <div class="newsImg">
+                            <a href="#">
+                                <img src="./images/news/xinjiang.jpg" alt="">
+                                <h4>新疆伊犁绿意盎然</h4>
+                            </a>
+                            <a href="#">
+                                <img src="./images/news/xiongmao.jpg" alt="">
+                                <h4>大熊猫享用龙舟宴</h4>
+                            </a>
+                            <a href="#">
+                                <img src="./images/news/maimai.jpg" alt="">
+                                <h4>麦麦博物馆</h4>
+                            </a>
+                        </div>
+                        <ul class="newsTitle">
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">美或扩大对国际生社交媒体审查</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">在场Global | 加沙安全崩溃，绝望的人们寻找食物</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">人工智能时代的金融监管建议</a>
+                                <a href="#">用比赛让机器人走出实验室</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">前主编Global | 外媒：撤销留学生签证，美国藤校将面对巨大损失？</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="cright">
+                        <a href="#">视频</a>
+                        <span class="blank"></span>
+                    </div>
+                    <div class="vB">
+                        <div class="newsVideo">
+                            <a href="#">
+                                <img src="./images/videoimg/qiantangjiang.jpg" alt="">
+                                <h4>
+                                    <span class="play"></span>
+                                    钱塘江三潮合一
+                                </h4>
+                            </a>
+                            <a href="#">
+                                <img src="./images/videoimg/gaokaoqian.jpg" alt="">
+                                <h4>
+                                    <span class="play"></span>
+                                    高考前的独家记忆
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="nvContent">
+                            <ul class="nVtitle">
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">BGM串烧为高考生加油</a>
+                                </li>
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">95后手搓航母轰炸机歼20</a>
+                                </li>
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">加沙孩子被惊吓到无法说话</a>
+                                </li>
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">雨后张家界仙侠意境拉满</a>
+                                </li>
+                            </ul>
+                            <ul class="nVtitle">
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">96岁抗战老兵走失后被找到</a>
+                                </li>
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">张雪峰自曝可能告别直播</a>
+                                </li>
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">林志颖晒未公开儿时照</a>
+                                </li>
+                                <li>
+                                    <span class="liststyle"></span>
+                                    <span class="videolist"></span>
+                                    <a href="#">男子偷7本彩票中4310元</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--  -->
+            <div class="rightbox">
+                <div class="box">
+                    <div class="cright">
+                        <a href="#">新闻</a>
+                        <span class="blank"></span>
+                    </div>
+                    <div class="crightContent">
+                        <ul class="newsTitle">
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #122e67;"><b>文脉华章丨总书记心中“最宝贵的东西”</b></a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #122e67;"><b>以廉洁文化推动尊廉、崇廉、爱廉</b></a>
+                                &nbsp;
+                                <a href="#" style="color: #122e67;"><b>学习知行</b></a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">多场“好戏”轮番登场 这个端午假期精彩不停歇→</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">北京网友说</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">新华视点｜多措并举 为“三夏”生产保驾护航</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">天津以产业强镇建设书写城乡融合“答卷”</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">中国始终是亚太安全的维护者（和音）</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">新疆阿克苏地区艾西曼区域：沙丘变绿洲</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">李在明胜选，或强化与中国合作</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">马斯克怒喷特朗普“大而美”法案：令人厌恶至极</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">美国白宫宣布提高进口钢铝关税至50%</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">因猥亵被处分的男教师又到保卫处任职，安徽师大回应</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">美国亚利桑那州州长否决“禁止中国政府购地法案”</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">李在明当选第21届韩国总统 他为什么能赢？</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">李在明赢得韩国大选，韩国新总统面临多重考验</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">马斯克怒喷特朗普“大而美”法案：令人厌恶至极</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">亚洲多国制造业被美国关税拖累：新订单大幅下降</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">职业敏感！民警吃早餐顺手帮老板挽回损失30多万元</a>
+                            </li>
+                        </ul>
+                        <ul class="newsTitle">
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">股票 | </a>
+                                <a href="#" style="color: #122e67;">一周28场券商电话会 稳定币话题热度爆表</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #e66100;">财经 | </a>
+                                <a href="#" style="color: #122e67;">一周28场券商电话会 稳定币话题热度爆表</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">潮玩品牌火爆出圈 两万余家企业掘金千亿蓝海市场</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">ETF专区 | </a>
+                                <a href="#" style="color: #122e67;">医药主题基金否极泰来 机构顺势发力布局</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#">中海朝阳顶豪，打响了头炮</a>
+                                <a href="#" style="color: #122e67;">华曦达换券商冲刺港股</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #e66100;">科技 | </a>
+                                <a href="#" style="color: #122e67;">英伟达市值增超7600亿元 一度重返全球第一</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #122e67;">AI智能体“潮涌” 大浪淘沙考验开发企业多重能力</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #122e67;">机器人大赛聚焦“解决实际问题” 包容“成长的烦恼”</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #e66100;">汽车 | </a>
+                                <a href="#" style="color: #122e67;">蔚来发布2025一季度财报</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #122e67;">在场Global丨巴黎圣日耳曼欧冠夺冠后，法国两人死亡数百人被捕</a>
+                            </li>
+                            <li>
+                                <span class="liststyle"></span>
+                                <a href="#" style="color: #122e67;">打工人的复仇！带薪养电子宠物</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+               
+        </div>
+    </div>
+</body>
+</html>
